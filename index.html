@@ -26,11 +26,11 @@
 <body>
 </body>
 <script>
-    var nama = "Ridwan";
-    var jabatan = "Manager";
-    var status = "Menikah";
+    let nama = "Ridwan";
+    let jabatan = "Manager";
+    let status = "Menikah";
 
-    var gajiPokok;
+    let gajiPokok;
     switch (jabatan) {
         case "Manager":
             gajiPokok = 15000000;
@@ -45,10 +45,10 @@
             gajiPokok = 0;
     }
 
-    var tunjanganJabatan = 0.15 * gajiPokok;
-    var bpjs = 0.1 * gajiPokok;
-    var tunjanganKeluarga = status === "Menikah" ? 0.2 * gajiPokok : 0;
-    var totalGaji = gajiPokok + tunjanganJabatan + bpjs + tunjanganKeluarga;
+    let tunjanganJabatan = 0.15 * gajiPokok;
+    let bpjs = 0.1 * gajiPokok;
+    let tunjanganKeluarga = status === "Menikah" ? 0.2 * gajiPokok : 0;
+    let totalGaji = gajiPokok + tunjanganJabatan + bpjs + tunjanganKeluarga;
 
     document.write("<h2 class='text-center'>Data Pegawai</h2>");
     document.write("<div class='table-center'><table border='1'>");
